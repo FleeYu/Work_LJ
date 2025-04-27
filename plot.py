@@ -5,7 +5,6 @@ from scipy.stats import pearsonr
 import numpy as np
 
 
-
 def plot_daily_mean(daily_mean_df, save_dir, filename, dpi=500, pre_range=None):
     """
     绘制日均折线图
@@ -16,7 +15,7 @@ def plot_daily_mean(daily_mean_df, save_dir, filename, dpi=500, pre_range=None):
     filename - 输出文件名
     dpi - 图片分辨率
     """
-    
+
     os.makedirs(save_dir, exist_ok=True)
 
     # 设置字体和样式
@@ -117,7 +116,7 @@ def plot_detailed(merged_df, output_dir, filename, dpi=500, title=None):
     dpi - 图片分辨率
     title - 图表标题（可选）
     """
- 
+
     os.makedirs(output_dir, exist_ok=True)
 
     # 设置字体和样式
